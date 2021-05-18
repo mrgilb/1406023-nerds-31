@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ilya Nikolenko](https://up.htmlacademy.ru/htmlcss/31/user/1406023).
-* Наставник: [Ирина Фролова](https://htmlacademy.ru/profile/id1043867)
+* Наставник: [Ирина Фролова](https://htmlacademy.ru/profile/id1043867).
 
 ---
 
