@@ -15,24 +15,24 @@
       <li><a href="blank.html">контакты</a></li>
     </ul>
   </nav>
-  <a href="blank.html"><img src="https://via.placeholder.com/150x100" width="15" height="15" alt="shopping basket"></a>
-  <p>корзина</p>
-  
+  <a href="blank.html"><img src="https://via.placeholder.com/150x100" width="15" height="15" alt="shopping basket">корзина</a> 
 <h1>Магазин готовых шаблонов</h1>
 </header>
 <form action="https://echo.htmlacademy.ru/">
   <fieldset>
-    <section>
-      <p>стоимость</p>
-      <input type="range" min="0" max="15000" value="0">
-      <section><!--Тут будет отправка формы по кнопке-->
-      <p>Сетка:</p>
+    <legend>стоимость</legend>
+    <input name="price" type="range" min="0" max="15000" value="0">
+  </fieldset>
+  <fieldset>
+    <legend>Сетка</legend>
       <ul>
         <li><input name="radio" type="radio" id="adaptive"><label for="adaptive">Адаптивная</label></li>
         <li><input name="radio" type="radio" id="fixed"><label for="fixed">Фиксированная</label></li>
         <li><input name="radio" type="radio" id="rubber"><label for="rubber">Резиновая</label></li>
       </ul>
-      <p>Особенности</p>
+  </fieldset>    
+  <fieldset>
+    <legend>Особенности</legend>
       <ul>
         <li><input name="slider" type="checkbox" id="slider"><label for="slider">Слайдер</label></li>
         <li><input name="advantages" type="checkbox" id="advantages"><label for="advantages">Преимущества</label></li>
@@ -40,10 +40,8 @@
         <li><input name="gallery" type="checkbox" id="gallery"><label for="gallery">Галерея</label></li>
         <li><input name="basket" type="checkbox" id="basket"><label for="basket">Корзина</label></li>
       </ul>
-      <input type="submit" value="Показать">
-      </section>
-    </section>
-  </fieldset>
+  </fieldset>    
+  <input type="submit" value="Показать">
 </form>
 <section>
   <p>Сортировать:</p>
@@ -56,60 +54,67 @@
   <a href="#"><img src="https://via.placeholder.com/150x100" width="11" height="10" alt="arrow to down"></a>
 </section>
 <section>
-  <div>
-      <div class=""><!--Здесь будет полоска с точками.--></div>
+  <ul>
+    <li>
+        <div class=""><!--Здесь будет полоска с точками.--></div>
+        <div>
+        <a href="#">sedona</a>
+        <p>Информационный сайт для туристов</p>
+        <p>9900 ₽</p>
+      </div>
+      <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="sedona">
+    </li>
+    <li>
       <div>
-      <a href="#">sedona</a>
-      <p>Информационный сайт для туристов</p>
-      <p>9900 ₽</p>
-  </div>
-  <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="sedona">
-  </div>
-  <div>
-      <div class=""><!--Здесь будет полоска с точками.--></div>
-      <div class="">
-      <a href="#">Pink App</a>
-      <p>Продуктовый лендинг приложения для iOS и Android</p>
-      <p>9900 ₽</p>
-  </div>
-  <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="pink">
-  </div>
-  <div>
-      <div class=""><!--Здесь будет полоска с точками.--></div>
-      <div class="">
-      <a href="#">Barbershop Borodinski</a>
-      <p>Сайт парикмахерской для мужчин</p>
-      <p>9900 ₽</p>
-  </div>
-  <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="borodinski">
-  </div>
-  <div>
-      <div class=""><!--Здесь будет полоска с точками.--></div>
-      <div class="">
-      <a href="#">Mishka</a>
-      <p>Сайт рукодельных изделий</p>
-      <p>9900 ₽</p>
-  </div>
-  <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="mishka">
-  </div>
-  <div>
-      <div class=""><!--Здесь будет полоска с точками.--></div>
-      <div class="">
-      <a href="#">Онлайн - школа</a>
-      <p>Сайт для удаленного обучения</p>
-      <p>9900 ₽</p>
-  </div>
-  <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="academy">
-  </div>
-  <div>
-      <div class=""><!--Здесь будет полоска с точками.--></div>
-      <div class="">
-      <a href="#">Кваст</a>
-      <p>Онлайн - магазин крафтового кваса</p>
-      <p>9900 ₽</p>
-  </div>
-  <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="kvast">
-  </div>
+          <div class=""><!--Здесь будет полоска с точками.--></div>
+          <div class="">
+          <a href="#">Pink App</a>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
+          <p>9900 ₽</p>
+       </div>
+      <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="pink">
+    </li>
+    <li>
+      <div>
+          <div class=""><!--Здесь будет полоска с точками.--></div>
+          <div class="">
+          <a href="#">Barbershop Borodinski</a>
+          <p>Сайт парикмахерской для мужчин</p>
+          <p>9900 ₽</p>
+         </div>
+        <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="borodinski">
+    </li>
+    <li>
+      <div>
+         <div class=""><!--Здесь будет полоска с точками.--></div>
+         <div class="">
+          <a href="#">Mishka</a>
+          <p>Сайт рукодельных изделий</p>
+          <p>9900 ₽</p>
+      </div>
+      <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="mishka">
+    </li>
+    <li>
+      <div>
+         <div class=""><!--Здесь будет полоска с точками.--></div>
+          <div class="">
+         <a href="#">Онлайн - школа</a>
+         <p>Сайт для удаленного обучения</p>
+         <p>9900 ₽</p>
+      </div>
+      <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="academy">
+    </li>
+    <li>
+      <div>
+        <div class=""><!--Здесь будет полоска с точками.--></div>
+        <div class="">
+        <a href="#">Кваст</a>
+        <p>Онлайн - магазин крафтового кваса</p>
+        <p>9900 ₽</p>
+      </div>
+       <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="kvast">
+    </li>
+  </ul>
 </section>
 <div>
   <ul>
