@@ -7,101 +7,109 @@
   <body>
 <header>
   <a href="index.html"><img src="https://via.placeholder.com/150x100" width="160" height="65" alt="logo"></a>
-  <ul>
-    <li><a href="blank.html">студия</a></li>
-    <li><a href="blank.html">клиенты</a></li>
-    <li><a href="catalog.html">магазин</a></li>
-    <li><a href="blank.html">контакты</a></li>
-  </ul>
-  <a href="blank.html"><img src="https://via.placeholder.com/150x100" width="15" height="15" alt="shopping basket">
-    <p>корзина</p>
-  </a>
+  <nav>
+    <ul>
+      <li><a href="blank.html">студия</a></li>
+      <li><a href="blank.html">клиенты</a></li>
+      <li><a href="catalog.html">магазин</a></li>
+      <li><a href="blank.html">контакты</a></li>
+    </ul>
+  </nav>
+  <a href="blank.html"><img src="https://via.placeholder.com/150x100" width="15" height="15" alt="shopping basket"></a>
+  <p>корзина</p>
+  
 <h1>Магазин готовых шаблонов</h1>
 </header>
-<section>
-  <p>стоимость</p>
-  <input type="range" min="0" max="15000" value="0">
-  <section><!--Тут будет отправка формы по кнопке-->
-  <p>Сетка:</p>
-  <ul>
-    <li><input name="adaptive" type="radio">Адаптивная</li>
-    <li><input name="fixed" type="radio">Фиксированная</li>
-    <li><input name="rubber" type="radio">Резиновая</li>
-  </ul>
-  <p>Особенности</p>
-  <ul>
-    <li><input name="slider" type="checkbox">Слайдер</li>
-    <li><input name="advantages" type="checkbox">Преимущества</li>
-    <li><input name="news" type="checkbox">Новости</li>
-    <li><input name="gallery" type="checkbox">Галерея</li>
-    <li><input name="basket" type="checkbox">Корзина</li>
-  </ul>
-  <button type="submit">ПОКАЗАТЬ</button>
-  </section>
-</section>
+<form action="https://echo.htmlacademy.ru/">
+  <fieldset>
+    <section>
+      <p>стоимость</p>
+      <input type="range" min="0" max="15000" value="0">
+      <section><!--Тут будет отправка формы по кнопке-->
+      <p>Сетка:</p>
+      <ul>
+        <li><input name="adaptive" type="radio" id="adaptive"><label for="adaptive">Адаптивная</label></li>
+        <li><input name="fixed" type="radio" id="fixed"><label for="fixed">Фиксированная</label></li>
+        <li><input name="rubber" type="radio" id="rubber"><label for="rubber">Резиновая</label></li>
+      </ul>
+      <p>Особенности</p>
+      <ul>
+        <li><input name="slider" type="checkbox" id="slider"><label for="slider">Слайдер</label></li>
+        <li><input name="advantages" type="checkbox" id="advantages"><label for="advantages">Преимущества</label></li>
+        <li><input name="news" type="checkbox" id="news"><label for="news">Новости</label></li>
+        <li><input name="gallery" type="checkbox" id="gallery"><label for="gallery">Галерея</label></li>
+        <li><input name="basket" type="checkbox" id="basket"><label for="basket">Корзина</label></li>
+      </ul>
+      <input type="submit" value="Показать">
+      </section>
+    </section>
+  </fieldset>
+</form>
 <section>
   <p>Сортировать:</p>
   <ul>
-    <li>По цене</li>
-    <li>По типу</li>
-    <li>По названию</li>
+    <li><a href="#">По цене</a></li>
+    <li><a href="#">По типу</a></li>
+    <li><a href="#">По названию</a></li>
   </ul>
-  <button type="button" name="up arrow"><img src="https://via.placeholder.com/150x100" width="11" height="10" alt="up arrow"></button>
-  <button type="button" name="arrow to down"><img src="https://via.placeholder.com/150x100" width="11" height="10" alt="arrow to down"></button>
+  <a href="#"><img src="https://via.placeholder.com/150x100" width="11" height="10" alt="up arrow"></a>
+  <a href="#"><img src="https://via.placeholder.com/150x100" width="11" height="10" alt="arrow to down"></a>
 </section>
 <section>
-  <div class=""><!--Здесь будет полоска с точками.--></div>
   <div>
-    <p>Sedona</p>
-    <p>Информационный сайт для туристов</p>
-    <p>9900 ₽</p>
+      <div class=""><!--Здесь будет полоска с точками.--></div>
+      <div>
+      <a href="#">sedona</a>
+      <p>Информационный сайт для туристов</p>
+      <p>9900 ₽</p>
   </div>
   <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="sedona">
-</section>
-<section>
-  <div class=""><!--Здесь будет полоска с точками.--></div>
-  <div class="">
-    <p>Pink App</p>
-    <p>Продуктовый лендинг приложения для iOS и Android</p>
-    <p>9900 ₽</p>
+  </div>
+  <div>
+      <div class=""><!--Здесь будет полоска с точками.--></div>
+      <div class="">
+      <a href="#">Pink App</a>
+      <p>Продуктовый лендинг приложения для iOS и Android</p>
+      <p>9900 ₽</p>
   </div>
   <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="pink">
-</section>
-<section>
-  <div class=""><!--Здесь будет полоска с точками.--></div>
-  <div class="">
-    <p>Barbershop Borodinski</p>
-    <p>Сайт парикмахерской для мужчин</p>
-    <p>9900 ₽</p>
+  </div>
+  <div>
+      <div class=""><!--Здесь будет полоска с точками.--></div>
+      <div class="">
+      <a href="#">Barbershop Borodinski</a>
+      <p>Сайт парикмахерской для мужчин</p>
+      <p>9900 ₽</p>
   </div>
   <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="borodinski">
-</section>
-<section>
-  <div class=""><!--Здесь будет полоска с точками.--></div>
-  <div class="">
-    <p>Mishka</p>
-    <p>Сайт рукодельных изделий</p>
-    <p>9900 ₽</p>
+  </div>
+  <div>
+      <div class=""><!--Здесь будет полоска с точками.--></div>
+      <div class="">
+      <a href="#">Mishka</a>
+      <p>Сайт рукодельных изделий</p>
+      <p>9900 ₽</p>
   </div>
   <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="mishka">
-</section>
-<section>
-  <div class=""><!--Здесь будет полоска с точками.--></div>
-  <div class="">
-    <p>Онлайн - школа</p>
-    <p>Сайт для удаленного обучения</p>
-    <p>9900 ₽</p>
+  </div>
+  <div>
+      <div class=""><!--Здесь будет полоска с точками.--></div>
+      <div class="">
+      <a href="#">Онлайн - школа</a>
+      <p>Сайт для удаленного обучения</p>
+      <p>9900 ₽</p>
   </div>
   <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="academy">
-</section>
-<section>
-  <div class=""><!--Здесь будет полоска с точками.--></div>
-  <div class="">
-    <p>Кваст</p>
-    <p>Онлайн - магазин крафтового кваса</p>
-    <p>9900 ₽</p>
+  </div>
+  <div>
+      <div class=""><!--Здесь будет полоска с точками.--></div>
+      <div class="">
+      <a href="#">Кваст</a>
+      <p>Онлайн - магазин крафтового кваса</p>
+      <p>9900 ₽</p>
   </div>
   <img src="https://via.placeholder.com/150x100" width="360" height="578" alt="kvast">
+  </div>
 </section>
 <div>
   <ul>
