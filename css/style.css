@@ -319,6 +319,7 @@ opacity: 0.2;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  color: var(--font-color);
 }
 .desc {
   font-size: 16px;
@@ -329,11 +330,13 @@ opacity: 0.2;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  color: var(--font-color);
 }
 .modal-caption {
   font-size: 45px;
   line-height: 53px;
   font-weight: 700;
+  color: var(--font-color);
 }
 /* .feedback-form{
 
@@ -365,11 +368,18 @@ opacity: 0.3;
 /* .modal .button {
 
 } */
+.headline {
+font-size: 55px;
+list-style: 55px;
+color: var(--font-color);
+text-align: center;
+}
 .price-filter legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--font-color);
 }
 /* .price-filter input {
 
@@ -384,6 +394,7 @@ opacity: 0.3;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--font-color);
 }
 .type-grid ul {
   list-style: none;
@@ -419,6 +430,7 @@ opacity: 0.3;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--font-color);
 }
 .features ul {
   list-style: none;
