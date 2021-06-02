@@ -28,6 +28,7 @@
   --font-color: #000000;
   --font-basiccolor:#283136;
   --font-address:#666666;
+  --font-black30:rgba(0, 1, 1, 0.3);
   --icons-color:#E1E1E1;
   --button-grey:#EEEEEE;
   --button-greyhover: #DFDFDF;
@@ -524,11 +525,9 @@ font-weight: 700;
   line-height: 18px;
   font-weight: 400;
 }
-.price-product {
-  background-color: var(--button-color);
+.item-button:active {
   color: var(--basic-white);
-  font-weight: 500;
-  border-radius: 3px;
+  opacity: 1;
 }
 .desc {
   color:var(--font-address);
@@ -547,14 +546,26 @@ list-style: none;
   text-transform: uppercase;
   color: var(--font-color);
   background-color:var(--button-grey) ;
-  border: 3px solid var(--button-grey);
   border-radius: 3px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   text-align: center;
 }
-.active-pagination a {
+.list-pagination a:hover {
+  background-color:var(--button-greyhover);
+
+}
+.list-pagination a:active {
+  background-color: var(--button-greyactive);
+  color: var(--font-color);
+  box-shadow:inset 0px 3px 0px var(--button-shadow);
+  color: var(--font-black30);
+}
+/* Состояние выбранной страницы */
+.list-pagination .active-pagination {
   background-color: var(--basic-white);
+  color: var(--font-color);
   border: 3px solid var(--button-border);
 }
+
