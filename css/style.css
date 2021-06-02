@@ -325,6 +325,7 @@ opacity: 0.2;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  color: var(--font-address);
 }
 .modal {
   font-size: 16px;
@@ -504,6 +505,7 @@ opacity: 0.12;
   width: 360px;
   height: 231px;
   background-color: var(--button-grey);
+  border-radius:0px 0px 3px 3px;
 }
 .hidden-desc a{
 text-decoration: none;
@@ -512,6 +514,9 @@ text-transform: uppercase;
 font-size:18px;
 line-height: 30px;
 font-weight: 700;
+}
+.item-product img {
+  border-radius:0px 0px 3px 3px;
 }
 .desc {
   color:var(--font-address);
@@ -523,6 +528,7 @@ font-weight: 700;
   background-color: var(--button-color);
   color: var(--basic-white);
   font-weight: 500;
+  border-radius: 3px;
 }
 .desc {
   color:var(--font-address);
@@ -541,6 +547,7 @@ list-style: none;
   text-transform: uppercase;
   color: var(--font-color);
   background-color:var(--button-grey) ;
+  border: 3px solid var(--button-grey);
   border-radius: 3px;
   font-size: 16px;
   line-height: 18px;
