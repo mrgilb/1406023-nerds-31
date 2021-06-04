@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -12,186 +12,200 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header class="main-header">
-    <a class="logo" href="index.html"><img src="img/logo/main-logo.svg" width="160" height="65" alt="logo"></a>
-    <nav class="navigation">
-      <ul>
-        <li class="item-navigation"><a href="blank.html">студия</a></li>
-        <li class="item-navigation"><a href="blank.html">клиенты</a></li>
-        <li class="item-navigation checked" aria-current="page"><a href="catalog.html">магазин</a></li>
-        <li class="item-navigation"><a href="blank.html">контакты</a></li>
-      </ul>
-    </nav>
-    <a class="basket" href="blank.html">корзина</a>
+<body class="page-body">
+  <header class="main-header-grid">
+    <div class="header-grid">
+      <a class="logo" href="index.html"><img src="img/logo/main-logo.svg" width="160" height="65" alt="logo"></a>
+      <nav class="navigation">
+        <ul>
+          <li class="item-navigation"><a href="blank.html">студия</a></li>
+          <li class="item-navigation"><a href="blank.html">клиенты</a></li>
+          <li class="item-navigation"><a href="catalog.html">магазин</a></li>
+          <li class="item-navigation"><a href="blank.html">контакты</a></li>
+        </ul>
+      </nav>
+      <a class="basket" href="blank.html">корзина</a>
+      <!--Как подключать слайдер я пока не знаю-->
+      </div>
     <h1 class="headline">Магазин готовых шаблонов</h1>
   </header>
-  <form class="form-filter" action="https://echo.htmlacademy.ru/">
-    <fieldset class="price-filter">
-      <legend>стоимость:</legend>
-      <input name="price" type="range" min="0" max="15000" value="0">
-    </fieldset>
-    <fieldset class="type-grid">
-      <legend>Сетка:</legend>
-      <ul>
-        <li class="item-type"><input class="radio-input" name="radio" type="radio" id="adaptive"><span class="radio"></span><label for="adaptive">Адаптивная</label></li>
-        <li class="item-type"><input class="radio-input" name="radio" type="radio" id="fixed"><span class="radio"></span><label for="fixed">Фиксированная</label></li>
-        <li class="item-type"><input class="radio-input" name="radio" type="radio" id="rubber"><span class="radio"></span><label for="rubber">Резиновая</label></li>
-      </ul>
-    </fieldset>
-    <fieldset class="features">
-      <legend>Особенности:</legend>
-      <ul>
-        <li class="item-features"><input class="check-input" name="slider" type="checkbox" id="slider"><label for="slider">Слайдер</label></li>
-        <li class="item-features"><input class="check-input" name="advantages" type="checkbox" id="advantages"><label for="advantages">Блок преимуществ</label></li>
-        <li class="item-features"><input class="check-input" name="news" type="checkbox" id="news"><label for="news">Новости</label></li>
-        <li class="item-features"><input class="check-input" name="gallery" type="checkbox" id="gallery"><label for="gallery">Галерея</label></li>
-        <li class="item-features"><input class="check-input" name="basket" type="checkbox" id="basket"><label for="basket">Корзина</label></li>
-      </ul>
-    </fieldset>
-    <button class="grey-button" type="submit">Показать</button>
-  </form>
-  <section class="breadcrumbs">
-    <p>Сортировать:</p>
-    <ul>
-      <li class="list-breadcrumbs"><button class="breadcrumbs-button active-filterbtn" type="button" >По цене</button></li>
-      <li class="list-breadcrumbs"><button class="breadcrumbs-button" type="button">по типу</button></li>
-      <li class="list-breadcrumbs"><button class="breadcrumbs-button" type="button">по названию</button></li>
-    </ul>
-    <ul>
-      <li>
-        <button class="breadcrumbs-button active-filterbtn" type="button"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5.5 10L0 0H11" fill="#231F20"/>
-          </svg>
-        </button>
-      </li>
-      <li>
-        <button class="breadcrumbs-button" type="button"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
-          </svg>
-        </button>
-      </li>
-    </ul>
+  <main class="main-grid">
+    <form class="form-filter" action="https://echo.htmlacademy.ru/">
+      <fieldset class="price-filter">
+        <legend>стоимость:</legend>
+        <input name="price" type="range" min="0" max="15000" value="0">
+      </fieldset>
+      <fieldset class="type-grid">
+        <legend>Сетка:</legend>
+        <ul>
+          <li class="item-type"><input class="radio-input" name="radio" type="radio" id="adaptive"><span class="radio"></span><label for="adaptive">Адаптивная</label></li>
+          <li class="item-type"><input class="radio-input" name="radio" type="radio" id="fixed"><span class="radio"></span><label for="fixed">Фиксированная</label></li>
+          <li class="item-type"><input class="radio-input" name="radio" type="radio" id="rubber"><span class="radio"></span><label for="rubber">Резиновая</label></li>
+        </ul>
+      </fieldset>
+      <fieldset class="features">
+        <legend>Особенности:</legend>
+        <ul>
+          <li class="item-features"><input class="check-input" name="slider" type="checkbox" id="slider"><label for="slider">Слайдер</label></li>
+          <li class="item-features"><input class="check-input" name="advantages" type="checkbox" id="advantages"><label for="advantages">Блок преимуществ</label></li>
+          <li class="item-features"><input class="check-input" name="news" type="checkbox" id="news"><label for="news">Новости</label></li>
+          <li class="item-features"><input class="check-input" name="gallery" type="checkbox" id="gallery"><label for="gallery">Галерея</label></li>
+          <li class="item-features"><input class="check-input" name="basket" type="checkbox" id="basket"><label for="basket">Корзина</label></li>
+        </ul>
+      </fieldset>
+      <button class="grey-button" type="submit">Показать</button>
+    </form>
+    <div class="product-container">
+      <section class="breadcrumbs">
+        <p>Сортировать:</p>
+        <ul>
+          <li class="list-breadcrumbs"><button class="breadcrumbs-button active-filterbtn" type="button" >По цене</button></li>
+          <li class="list-breadcrumbs"><button class="breadcrumbs-button" type="button">по типу</button></li>
+          <li class="list-breadcrumbs"><button class="breadcrumbs-button" type="button">по названию</button></li>
+        </ul>
+        <ul>
+          <li>
+            <button class="breadcrumbs-button active-filterbtn" type="button"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#231F20"/>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="breadcrumbs-button" type="button"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
 
-  </section>
-  <section class="pruduct">
-    <ul>
-      <li class="item-product">
-        <div class="hidden-head">
-          <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
-          </svg>
-        </div>
-        <div class="hidden-desc">
-          <a href="#">sedona</a>
-          <p class="desc">Информационный сайт для туристов</p>
+      </section>
+      <section class="pruduct">
+        <ul>
+          <li class="item-product">
+            <div class="hidden-head">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
+              </svg>
+            </div>
+            <div class="hidden-desc">
+              <a href="#">sedona</a>
+              <p class="desc">Информационный сайт для туристов</p>
 
-          <button class="button item-button">9 900 ₽</button>
-        </div>
-        <img src="img/catalog/sedona.jpg" width="360" height="578" alt="sedona">
-      </li>
-      <li class="item-product">
-        <div class="hidden-head">
-          <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
-          </svg>
-        </div>
-        <div class="hidden-desc">
-          <a href="#">Pink App</a>
-          <p class="desc">Продуктовый лендинг приложения для iOS и Android</p>
-          <button class="button item-button">9 900 ₽</button>
-        </div>
-        <img src="img/catalog/pink.jpg" width="360" height="578" alt="pink">
-      </li>
-      <li class="item-product">
-        <div class="hidden-head">
-          <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
-          </svg>
-        </div>
-        <div class="hidden-desc">
-          <a href="#">Barbershop Borodinski</a>
-          <p class="desc">Сайт салона красоты.Для мужчин, да.</p>
-          <button class="button item-button">9 900 ₽</button>
-        </div>
-        <img src="img/catalog/borodinski.jpg" width="360" height="578" alt="borodinski">
-      </li>
-      <li class="item-product">
-        <div class="hidden-head">
-          <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
-          </svg>
-        </div>
-        <div class="hidden-desc">
-          <a href="#">Mishka</a>
-          <p class="desc">Интернет-магазин вязаных игрушек</p>
-          <button class="button item-button">9 900 ₽</button>
-        </div>
-        <img src="img/catalog/mishka.jpg" width="360" height="578" alt="mishka">
-      </li>
-      <li class="item-product">
-        <div class="hidden-head">
-          <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
-          </svg>
-        </div>
-        <div class="hidden-desc">
-          <a href="#">A Plus</a>
-          <p class="desc">Лендинг курсов повышения квалификации</p>
-          <button class="button item-button">9 900 ₽</button>
-        </div>
-        <img src="img/catalog/aplus.jpg" width="360" height="578" alt="academy">
-      </li>
-      <li>
-        <div class="hidden-head">
-          <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
-          </svg>
-        </div>
-        <div class="hidden-desc">
-          <a href="#">Кваст</a>
-          <p class="desc">Промо-сайт производителя крафтового кваса</p>
-          <button class="button item-button">9 900 ₽</button>
-        </div>
-        <img src="img/catalog/kvast.png" width="360" height="578" alt="kvast">
-      </li>
-    </ul>
-  </section>
-  <div class="pagination">
-    <ul>
-      <li class="list-pagination"><a href="">1</a></li>
-      <li class="list-pagination"><a href="">2</a></li>
-      <li class="list-pagination"><a href="">3</a></li>
-      <li class="list-pagination"><a href="">Следующая</a></li>
-    </ul>
-  </div>
+              <button class="button item-button">9 900 ₽</button>
+            </div>
+            <img src="img/catalog/sedona.jpg" width="360" height="578" alt="sedona">
+          </li>
+          <li class="item-product">
+            <div class="hidden-head">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
+              </svg>
+            </div>
+            <div class="hidden-desc">
+              <a href="#">Pink App</a>
+              <p class="desc">Продуктовый лендинг приложения для iOS и Android</p>
+              <button class="button item-button">9 900 ₽</button>
+            </div>
+            <img src="img/catalog/pink.jpg" width="360" height="578" alt="pink">
+          </li>
+          <li class="item-product">
+            <div class="hidden-head">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
+              </svg>
+            </div>
+            <div class="hidden-desc">
+              <a href="#">Barbershop Borodinski</a>
+              <p class="desc">Сайт салона красоты.Для мужчин, да.</p>
+              <button class="button item-button">9 900 ₽</button>
+            </div>
+            <img src="img/catalog/borodinski.jpg" width="360" height="578" alt="borodinski">
+          </li>
+          <li class="item-product">
+            <div class="hidden-head">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
+              </svg>
+            </div>
+            <div class="hidden-desc">
+              <a href="#">Mishka</a>
+              <p class="desc">Интернет-магазин вязаных игрушек</p>
+              <button class="button item-button">9 900 ₽</button>
+            </div>
+            <img src="img/catalog/mishka.jpg" width="360" height="578" alt="mishka">
+          </li>
+          <li class="item-product">
+            <div class="hidden-head">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
+              </svg>
+            </div>
+            <div class="hidden-desc">
+              <a href="#">A Plus</a>
+              <p class="desc">Лендинг курсов повышения квалификации</p>
+              <button class="button item-button">9 900 ₽</button>
+            </div>
+            <img src="img/catalog/aplus.jpg" width="360" height="578" alt="academy">
+          </li>
+          <li>
+            <div class="hidden-head">
+              <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9505 23.5C64.201 25.6658 66.5118 27 69.0127 27C72.8787 27 76.0127 23.866 76.0127 20C76.0127 16.134 72.8787 13 69.0127 13C66.5118 13 64.201 14.3342 62.9505 16.5C61.7001 18.6658 61.7001 21.3342 62.9505 23.5Z" fill="#4D4D4D"/>
+              </svg>
+            </div>
+            <div class="hidden-desc">
+              <a href="#">Кваст</a>
+              <p class="desc">Промо-сайт производителя крафтового кваса</p>
+              <button class="button item-button">9 900 ₽</button>
+            </div>
+            <img src="img/catalog/kvast.png" width="360" height="578" alt="kvast">
+          </li>
+        </ul>
+      </section>
+      <div class="pagination">
+        <ul>
+          <li class="list-pagination"><a href="">1</a></li>
+          <li class="list-pagination"><a href="">2</a></li>
+          <li class="list-pagination"><a href="">3</a></li>
+          <li class="list-pagination"><a href="">Следующая</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
   <footer>
-    <section>
-      <a class="img-map" href="https://go.2gis.com/w8o9k"><img src="img/map.jpg" width="1440" height="416"
+    <section class="footer-grid">
+      <div class="map">
+        <a class="img-map" href="https://go.2gis.com/w8o9k"><img src="img/map.jpg" width="1440" height="416"
           alt="наб. Реки Карповки,5 лит П, Санкт-Петербург тел:+7 800 555-86-28"></a>
+      </div>
       <!--Пока не знаю как делать интерактивную карту, но научусь и добавлю-->
       <div class="contacts">
-      <p>NЁRDS DESIGN STUDIO</p>
-      <address>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</address>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
-      <button class="button" type="button">Напишите нам</button>
+        <p>NЁRDS DESIGN STUDIO</p>
+        <address>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</address>
+        <a href="tel:+78005558628">+7 800 555-86-28</a>
+        <button class="button" type="button">Напишите нам</button>
       </div>
-      <div class="social">
-        <ul>
-          <li class="list-social"><a class="social-icon" href="blank.html"><svg width="26" height="15" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z"/>
-            </svg></a></li>
-          <li class="list-social"><a class="social-icon" href="blank.html"><svg width="12" height="22" viewBox="0 0 12 22"  xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" />
-            </svg>
-            </a></li>
-          <li class="list-social"><a class="social-icon" href="blank.html"><svg width="21" height="21" viewBox="0 0 21 21"  xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"/>
-            </svg>
-            </a></li>
-        </ul>
-        <p class="title">Давайте дружить, это выгодно!</p>
-        <p class="desc">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="social-grid">
+        <div class="social">
+          <ul>
+            <li class="list-social"><a class="social-icon" href="blank.html"><svg width="26" height="15" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z"/>
+              </svg></a></li>
+            <li class="list-social"><a class="social-icon" href="blank.html"><svg width="12" height="22" viewBox="0 0 12 22"  xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" />
+              </svg>
+              </a></li>
+            <li class="list-social"><a class="social-icon" href="blank.html"><svg width="21" height="21" viewBox="0 0 21 21"  xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"/>
+              </svg>
+              </a></li>
+          </ul>
+        </div>
+        <div class="footer-title">
+          <p class="title">Давайте дружить, это выгодно!</p>
+          <p class="desc">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </section>
   </footer>
