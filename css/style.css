@@ -66,7 +66,9 @@
   background-color: var(--basic-color);
   padding-bottom: 108px;
 }
-
+.index {
+  padding: 0px;
+}
 .logo:hover {
   opacity: 0.7;
 }
@@ -205,14 +207,17 @@ color:var(--button-textactive);
 }
 
 .item-slider{
-  display: grid;
-  grid-template-columns:1fr 1fr ;
+  width: 1160px;
+  min-height: 431px;
+  background-image:url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
-.descritpion-container {
-  width: 538px;
-  height: 273px;
-  margin-right: -141px;
-  z-index: 1;
+.item-slider:nth-child(2) {
+  background-image:url("../img/slide2.png");
+}
+.item-slider:nth-child(3) {
+  background-image:url("../img/slide3.png");
 }
 .head-slider{
   color: var(--font-color);
