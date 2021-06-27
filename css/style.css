@@ -1329,7 +1329,7 @@
   padding: 0;
   border: none;
   font: inherit;
-  color: inherit;
+  color: var(--font-color);
   background-color: transparent;
   text-decoration: none;
   font-size: 14px;
@@ -1338,7 +1338,12 @@
   text-transform: uppercase;
   opacity: 0.3;
 }
-
+.breadcrumbs-button:hover, .breadcrumbs-button:focus {
+opacity: 0.6;
+}
+.breadcrumbs-button:active {
+  opacity: 1;
+  }
 .active-filterbtn {
   opacity: 1;
 }
