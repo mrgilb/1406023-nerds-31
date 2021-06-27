@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style-minify.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -34,24 +34,24 @@
         <legend>стоимость:</legend>
         <div class="range">
           <div class="scale">
+            <button class="toggle-filter min-toggle" style="left: 7%;"><span class="toggle-poin"></span></button>
+            <button class="toggle-filter max-toggle" style="left: 62%;"><span class="toggle-poin"></span></button>
             <div class="bar" style="width: 70%;"></div>
           </div>
-          <button class="toggle-filter min-toggle" style="left: 20%;"><span class="toggle-poin"></span></button>
-          <button class="toggle-filter max-toggle" style="left: 75%;"><span class="toggle-poin"></span></button>
         </div>
         <div class="price-number">
-          <label class="min-price">от<input type="number" name="min-price" value="0"></label>
-          <label class="max-price">до<input type="number" name="max-price" value="15000"></label>
+          <label class="min-price">от<input class="input-number" type="number" name="min-price" value="0"></label>
+          <label class="max-price">до<input class="input-number" type="number" name="max-price" value="15000"></label>
         </div>
       </fieldset>
       <fieldset class="type-grid">
         <legend>Сетка:</legend>
         <ul>
           <li class="item-type"><input class="radio-input visually-hidden" name="radio" type="radio"
-              id="adaptive"><label for="adaptive">Адаптивная</label></li>
+              id="adaptive" checked><label for="adaptive">Адаптивная</label></li>
           <li class="item-type"><input class="radio-input visually-hidden" name="radio" type="radio" id="fixed"><label
               for="fixed">Фиксированная</label></li>
-          <li class="item-type"><input class="radio-input visually-hidden" name="radio" type="radio" id="rubber" disabled ><label
+          <li class="item-type"><input class="radio-input visually-hidden" name="radio" type="radio" id="rubber" ><label
               for="rubber">Резиновая</label></li>
         </ul>
       </fieldset>
@@ -59,11 +59,11 @@
         <legend>Особенности:</legend>
         <ul>
           <li class="item-features"><input class="check-input visually-hidden" name="slider" type="checkbox"
-              id="slider" disabled ><label for="slider">Слайдер</label></li>
+              id="slider" checked ><label for="slider">Слайдер</label></li>
           <li class="item-features"><input class="check-input visually-hidden" name="advantages" type="checkbox"
               id="advantages"><label for="advantages">Блок преимуществ</label></li>
           <li class="item-features"><input class="check-input visually-hidden" name="news" type="checkbox"
-              id="news"><label for="news">Новости</label></li>
+              id="news" checked><label for="news">Новости</label></li>
           <li class="item-features"><input class="check-input visually-hidden" name="gallery" type="checkbox"
               id="gallery"><label for="gallery">Галерея</label></li>
           <li class="item-features"><input class="check-input visually-hidden" name="basket" type="checkbox"
@@ -112,7 +112,7 @@
             </div>
             <div class="hidden-desc">
               <a href="#">sedona</a>
-              <p class="desc-catalog">Информационный сайт для туристов</p>
+              <p class="desc-catalog">Информационный сайт <br> для туристов</p>
               <button class="button item-button">9 900 ₽</button>
             </div>
 
@@ -127,7 +127,7 @@
             </div>
             <div class="hidden-desc">
               <a href="#">Pink App</a>
-              <p class="desc-catalog">Продуктовый лендинг приложения для iOS и Android</p>
+              <p class="desc-catalog">Продуктовый лендинг <br> приложения для iOS и Android</p>
               <button class="button item-button">9 900 ₽</button>
             </div>
             <img src="img/catalog/pink.jpg" width="360" height="578" alt="pink">
@@ -142,7 +142,7 @@
             </div>
             <div class="hidden-desc">
               <a href="#">Barbershop Borodinski</a>
-              <p class="desc-catalog">Сайт салона красоты.Для мужчин, да.</p>
+              <p class="desc-catalog">Сайт салона красоты. <br> Для мужчин, да.</p>
               <button class="button item-button">9 900 ₽</button>
             </div>
             <img src="img/catalog/borodinski.jpg" width="360" height="578" alt="borodinski">
@@ -157,7 +157,7 @@
             </div>
             <div class="hidden-desc">
               <a href="#">Mishka</a>
-              <p class="desc-catalog">Интернет-магазин вязаных игрушек</p>
+              <p class="desc-catalog">Интернет-магазин <br> вязаных игрушек</p>
               <button class="button item-button">9 900 ₽</button>
             </div>
             <img src="img/catalog/mishka.jpg" width="360" height="578" alt="mishka">
@@ -172,7 +172,7 @@
             </div>
             <div class="hidden-desc">
               <a href="#">A Plus</a>
-              <p class="desc-catalog">Лендинг курсов повышения квалификации</p>
+              <p class="desc-catalog">Лендинг курсов повышения <br> квалификации</p>
               <button class="button item-button">9 900 ₽</button>
             </div>
             <img src="img/catalog/aplus.jpg" width="360" height="578" alt="academy">
@@ -187,7 +187,7 @@
             </div>
             <div class="hidden-desc">
               <a href="#">Кваст</a>
-              <p class="desc-catalog">Промо-сайт производителя крафтового кваса</p>
+              <p class="desc-catalog">Промо-сайт производителя <br> крафтового кваса</p>
               <button class="button item-button">9 900 ₽</button>
             </div>
             <img src="img/catalog/kvast.png" width="360" height="578" alt="kvast">

@@ -1029,7 +1029,7 @@
   height: 2px;
   background: var(--scale-bar);
   width: 70%;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
 }
 
@@ -1091,6 +1091,7 @@
   border-radius: 3px;
   padding: 16px 8px 15px 8px;
   margin-left: 11px;
+  text-align: center;
 }
 
 .form-filter {
@@ -1394,11 +1395,11 @@
   visibility: hidden;
 }
 
-.item-product:focus .hidden-desc {
+.item-product:focus-within .hidden-desc {
   visibility: visible;
 }
 
-.item-product:focus .hidden-head {
+.item-product:focus-within .hidden-head {
   opacity: 1;
 }
 
@@ -1429,6 +1430,7 @@
   margin-top: 26px;
 }
 
+
 .item-product img {
   margin: 0;
   border-radius: 0 0 3px 3px;
@@ -1445,7 +1447,8 @@
   font-weight: 400;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
+  margin-top: 13px;
 }
 
 .item-button {
@@ -1519,4 +1522,23 @@
 
 .inner-footer {
   margin-top: 59px;
+}
+
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-number {
+  -moz-appearance: textfield;
+}
+.input-number:hover,
+.input-number:focus {
+  -moz-appearance: number-input;
+}
+
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
