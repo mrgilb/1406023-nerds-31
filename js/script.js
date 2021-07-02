@@ -4,13 +4,39 @@ const modal_open = document.querySelector(".modal-open");
 const modal_close = document.querySelector(".modal-close");
 const modal = document.querySelector(".modal");
 const full_name = modal.querySelector("[name=full-name]");
+const email = modal.querySelector("[name=email]");
+const letter = modal.querySelector("[name=letter]")
+let storage_name = "";
+let storage_email = "";
+let is_storage_support = true;
+try {
+  storage_name = localStorage.getItem("name");
+  storage_email = localStorage.getItem("email");
+} catch (err) {
+  is_storage_support = false;
+};
 modal_open.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.add("modal-active");
-  full_name.focus();
+  if (is_storage_support) {
+    full_name.value = storage_name;
+    letter.focus();
+  } else { full_name.focus(); };
+  if (is_storage_support) {
+    email.value = storage_email;
+    letter.focus();
+  } else { email.focus() };
+});
+modal.addEventListener("submit", function (evt) {
+  if (!full_name.value || !email.value) {
+    evt.preventDefault()
+    modal.classList.add("modal-error");
+  } else { localStorage.setItem("name", full_name.value), localStorage.setItem("email", email.value) }
+
 });
 modal_close.addEventListener("click", function (evt) {
   evt.preventDefault();
+  modal.classList.remove("modal-error");
   modal.classList.remove("modal-active");
 });
 window.addEventListener("keydown", function (evt) {
