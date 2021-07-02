@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -29,6 +29,11 @@
     <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
     <section class="slider">
       <ul>
+        <li class="item-slider">
+          <p class="head-slider">Долго, дорого,<br> скрупулезно.</p>
+          <p class="desc-slider">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+          <a class="button button-slider" href="blank.html">узнать больше</a>
+        </li>
         <li class="item-slider visually-hidden">
           <p class="head-slider">Только ночь,<br> только хардкор</p>
           <p class="desc-slider">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
@@ -41,16 +46,11 @@
           </p>
           <a class="button button-slider" href="blank.html">узнать больше</a>
         </li>
-        <li class="item-slider">
-          <p class="head-slider">Долго, дорого,<br> скрупулезно.</p>
-          <p class="desc-slider">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-          <a class="button button-slider" href="blank.html">узнать больше</a>
-        </li>
       </ul>
       <div class="container-radio-slider">
-        <button class="slider-button current" aria-label="Первый слайд"></button>
-        <button class="slider-button" aria-label="Второй слайд"></button>
-        <button class="slider-button" aria-label="Третий слайд"></button>
+        <button class="slider-button current"  aria-label="Первый слайд"></button>
+        <button class="slider-button"  aria-label="Второй слайд"></button>
+        <button class="slider-button"  aria-label="Третий слайд"></button>
       </div>
     </section>
   </header>
@@ -130,7 +130,7 @@
       <h4>NЁRDS DESIGN STUDIO</h4>
       <address>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</address>
       <a class="telephone" href="tel:+78005558628">+7 800 555-86-28</a>
-      <a class="button" href="">Напишите нам</a>
+      <a class="button modal-open"  href="">Напишите нам</a>
       <img class="visually-hidden" src="img/icons/map-marker1.png" width="231" height="190" alt="">
     </div>
     <div class="social">
@@ -167,10 +167,10 @@
       </svg>
     </button>
     <label class="full-name" for="full-name">Ваше имя:
-      <input class="feedback-form" type="text" name="full-name" id="full-name" placeholder="Имя Фамилия">
+      <input class="feedback-form" type="text" name="full-name" id="full-name" placeholder="Имя Фамилия" >
     </label>
     <label class="email" for="email">Ваш email:
-      <input class="feedback-form" type="email" name="email" id="email" placeholder="email@example.com">
+      <input class="feedback-form" type="email" name="email" id="email" placeholder="email@example.com" >
     </label>
     <label class="letter" for="letter">Текст письма:
       <textarea name="letter" id="letter" cols="30" rows="3" placeholder="В свободной форме"></textarea>
@@ -178,7 +178,7 @@
     <button class="button modal-button" type="submit">Отправить</button>
 
   </form>
-
+<script src="js/script.min.js"></script>
 </body>
 
 </html>

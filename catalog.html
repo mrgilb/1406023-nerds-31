@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -215,7 +215,7 @@
       <h4>NЁRDS DESIGN STUDIO</h4>
       <address>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</address>
       <a class="telephone" href="tel:+78005558628">+7 800 555-86-28</a>
-      <a class="button" href="">Напишите нам</a>
+      <a class="button modal-open"  href="">Напишите нам</a>
       <img class="visually-hidden" src="img/icons/map-marker1.png" width="231" height="190" alt="">
     </div>
     <div class="social">
@@ -243,6 +243,27 @@
       <p class="desc">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <form class="modal" action="https://echo.htmlacademy.ru/">
+    <p class="modal-caption">Напишите нам</p>
+    <button class="modal-close" type="button"><svg width="21" height="21" viewBox="0 0 21 21"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z" />
+      </svg>
+    </button>
+    <label class="full-name" for="full-name">Ваше имя:
+      <input class="feedback-form" type="text" name="full-name" id="full-name" placeholder="Имя Фамилия" >
+    </label>
+    <label class="email" for="email">Ваш email:
+      <input class="feedback-form" type="email" name="email" id="email" placeholder="email@example.com" >
+    </label>
+    <label class="letter" for="letter">Текст письма:
+      <textarea name="letter" id="letter" cols="30" rows="3" placeholder="В свободной форме"></textarea>
+    </label>
+    <button class="button modal-button" type="submit">Отправить</button>
+
+  </form>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
