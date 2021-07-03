@@ -575,7 +575,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   border-top: 2px solid var(--button-grey);
   border-bottom: 2px solid var(--button-grey);
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .item-clients {
@@ -1112,7 +1112,7 @@
   line-height: 22px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-right: 33px;
+  margin-right: 27px;
 }
 
 .max-price {
@@ -1504,6 +1504,8 @@
 
 .desc-catalog {
   width: 255px;
+  max-height: 300px;
+  overflow: auto;
   color: var(--font-address);
   font-size: 16px;
   line-height: 18px;
@@ -1587,7 +1589,7 @@
 }
 
 .inner-footer {
-  margin-top: 49px;
+  margin-top: 45px;
 }
 
 .input-number::-webkit-outer-spin-button, .input-number::-webkit-inner-spin-button {
