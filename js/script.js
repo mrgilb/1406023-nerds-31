@@ -5,7 +5,7 @@ const modal_close = document.querySelector(".modal-close");
 const modal = document.querySelector(".modal");
 const full_name = modal.querySelector("[name=full-name]");
 const email = modal.querySelector("[name=email]");
-const letter = modal.querySelector("[name=letter]")
+const letter = modal.querySelector("[name=letter]");
 let storage_name = "";
 let storage_email = "";
 let is_storage_support = true;
